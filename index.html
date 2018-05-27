@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>首页</title>
+</head>
+<body>
+	<h5>你的余额是<span id="amount">&&&amount&&&</span></h5>
+<button id="button">付款</button>
+
+<script>
+	button.addEventListener('click',function(){
+		var script = document.createElement('script')
+		script.src = '/pay'
+		document.body.appendChild(script)
+		script.onload = function(e){
+			e.currentTarget.remove()
+		}
+		script.onerror = function(e){
+			e.currentTarget.remove()
+			alert("false")
+		}
+	})
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
